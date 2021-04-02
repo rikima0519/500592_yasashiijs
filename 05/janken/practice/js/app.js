@@ -52,7 +52,7 @@ function janken() {
 
   /* 実行する処理 ************************/
   let hum = getHumHand();
-  if (!hum) {
+  if (hum == undefined) {
     alert('入力値をうまく認識できませんでした。ブラウザを再読込すると、もう一度挑戦できます。');
   } else {
     let com = getComHand();
